@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <title>Islands shop</title>
   </head>
 
@@ -11,21 +17,18 @@
     <header id="header">
       <div class="container">
         <div class="header-content">
-          <img src="img/logo.png" alt="Islands shop logo" class="logo" />
-          <nav>
+          <img
+            id="header-img"
+            src="img/logo2.png"
+            alt="Islands shop logo"
+            class="logo"
+          />
+          <nav id="nav-bar">
             <ul class="menu">
-              <li><a href="#">Features</a></li>
+              <li><a class="nav-link" href="#features">Features</a></li>
+              <li><a class="nav-link" href="#video">How It works</a></li>
               <li>
-                <a
-                  href="
-                "
-                  >How It works</a
-                >
-              </li>
-              <li>
-                <a href="">
-                  Pricing
-                </a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
             </ul>
           </nav>
@@ -37,15 +40,126 @@
       <h1>Place where dreams come true...</h1>
       <p>Buy your dream island</p>
       <div class="email-form">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email address"
-        />
-        <a href="#" class="btn">Contact us</a>
+        <form
+          id="form"
+          action="
+        "
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+          <input type="submit" id="submit" value="Contact Us" class="btn" />
+          <!-- <a href="#" class="btn">Contact us</a> -->
+        </form>
       </div>
     </section>
+
+    <section class="about" id="features">
+      <div class="container">
+        <div class="items-container">
+          <div class="about-item">
+            <div class="icon"><i class="far fa-grin-beam fa-5x"></i></div>
+            <div class="description">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aperiam, dolores. Architecto, eos itaque facere error a facilis
+                ipsa, vero aperiam adipisci corrupti accusantium asperiores
+                pariatur doloribus consectetur. Numquam, vero aliquam.
+              </p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="icon"><i class="far fa-grin-beam fa-5x"></i></div>
+            <div class="description">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt eum consequatur blanditiis aut atque? Saepe dolor, nam
+                sunt eius eos alias esse voluptate, iusto cumque accusamus quos!
+                Hic, saepe quae!
+              </p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="icon"><i class="far fa-grin-beam fa-5x"></i></div>
+            <div class="description">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                nobis, aliquid dolores sit soluta, ipsa asperiores odit incidunt
+                corporis perspiciatis at adipisci, perferendis enim nesciunt
+                similique corrupti autem voluptatem excepturi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container">
+        <div id="iframe-container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/D_vOqkEgmY0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="pricing-elements-container">
+          <div class="price-info">
+            <h2>Basic</h2>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <p class="price">100$</p>
+            <button class="btn">This one!</button>
+          </div>
+
+          <div class="price-info">
+            <h2>Pro</h2>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <p class="price">300$</p>
+            <button class="btn">This one!</button>
+          </div>
+          <div class="price-info">
+            <h2>XXL</h2>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <span>> lorem ipsum</span>
+            <p class="price">1000$</p>
+            <button class="btn">This one!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="info">
+          <div class="nav">
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <span class="copyright">Copyright2020, Vladyslav Patsiuk</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
