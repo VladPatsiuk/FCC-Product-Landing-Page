@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #f4f6ff;
+  --yellow-color: #f3c623;
+  --light-blue-color: #127681;
+  --dark-blue-color: #10375c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  padding-top: 100px;
+  -webkit-font-smoothing: antialised;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 2rem 0;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: var(--light-blue-color);
+  z-index: 4;
+}
+
+header .header-content {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  width: auto;
+  max-height: 100px;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+li > a:hover {
+  color: var(--yellow-color);
+}
+/* Showcase section */
+
+.showcase {
+  position: relative;
+  background: url("../img/showcase-img.jpg") var(--dark-blue-color) no-repeat
+    center center fixed;
+  background-size: cover;
+  height: 70vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.showcase * {
+  z-index: 2;
+}
+
+.showcase .email-form {
+  width: 40%;
+  display: flex;
+  margin-top: 6rem;
+}
+
+.showcase .email-form input {
+  padding: 20px;
+  width: 60%;
+
+  font-size: 1.3rem;
+}
+
+.showcase .email-form a {
+  width: 40%;
+  background: var(--dark-blue-color);
+  text-align: center;
+  padding: 22px;
+  font-size: 1.3rem;
+}
+
+.showcase .email-form a:hover {
+  opacity: 0.9;
+}
+
+/* Utility classes */
+
+.container {
+  width: 80vw;
+  margin: auto;
+  padding: 0 2rem;
+}
