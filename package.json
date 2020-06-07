@@ -1,0 +1,22 @@
+{
+  "name": "fcc-product-landing-page",
+  "version": "1.0.0",
+  "description": "Simple HTML/CSS project for FreeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladPatsiuk/FCC-Product-Landing-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladPatsiuk/FCC-Product-Landing-Page/issues"
+  },
+  "homepage": "https://vladpatsiuk.github.io/FCC-Product-Landing-Page",
+  "dependencies": {
+    "gh-pages": "^3.0.0"
+  }
+}
